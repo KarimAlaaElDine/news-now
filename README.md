@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# News Now
+News now is an app the utilises react-redux as well as *NewsAPI* to bring the user up-to-date news headlines.
+The app uses a store containing the current country being searched for as well as the array of articles related to
+that country to maintain consistancy by having a single source of truth.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 

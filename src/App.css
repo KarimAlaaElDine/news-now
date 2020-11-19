@@ -1,11 +1,96 @@
+*{
+  color: white;
+}
+@keyframes fadein{
+  from{margin-top: 0%; opacity: 0;}
+  to{margin-top: 10%; opacity: 100%;}
+}
+@keyframes fade2{
+  0%{opacity: 0%;}
+  50%{opacity: 0%;}
+  100%{opacity: 100%;}
+}
 .App {
+  display: flex ;
+  flex-direction: column;
+  flex-grow: 5;
+  flex-wrap: nowrap;
   text-align: center;
+  overflow: hidden;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.h1{
+  animation-name: fadein;
+  animation-duration: 2s;
+  font-family: "Times New Roman", Times, serif;
+  background-color: maroon;
+  height: 200px;
+  width: 150px;
+  padding-top: 100px;
+  margin-top: 10%;
+
+
 }
+
+.eForm{
+  display: flexbox;
+ align-items: center;
+  animation-name: fade2;
+  animation-duration: 4s;
+}
+.card{
+ flex-basis: 20%;
+}
+.form-control-lg{
+  width: 50%;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+#theB{
+  width: 20%;
+  font-size: large;
+  border-color: maroon;
+  background-color: maroon;
+}
+#theB:hover{
+  background-color: rgb(133, 33, 33);
+}
+.countryTitle{
+  display: flex;
+  font-size: 50px;
+  background-color: maroon;
+  padding: 2%;
+  margin-bottom: 5%;
+  justify-content: center;
+  font-family: "Times New Roman", Times, serif;
+  align-items: center;
+  align-content: center;
+
+}
+@media only screen and (max-width:1000px){
+  .card{
+    flex-basis: 40%;
+  }
+}
+@media only screen and (max-width:700px){
+  .card{
+    flex-basis: 100%;
+  }
+  .form-control-lg{
+    width: 75%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+  }
+  #theB{
+    width: 50%;
+  }
+}
+
+
+
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -15,7 +100,6 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
